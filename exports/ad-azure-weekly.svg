@@ -1,0 +1,258 @@
+ <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="992"
+        height="320"
+        fill="none"
+        viewBox="0 0 992 320"
+      >
+        <style>
+          * {
+            transform-box: fill-box;
+            text-decoration: none;
+          }
+
+          .bg {
+            fill: #00a0fa;
+          }
+
+          .text {
+            font-family: var(--ff-heading, "Inter var"), sans-serif;
+            font-size: 50px;
+            fill: white;
+          }
+
+          .h1 {
+            font-weight: 600;
+            font-size: 50px;
+          }
+
+          .h2 {
+            font-size: 33px;
+          }
+
+          .p {
+            font-size: 20px;
+          }
+
+          .btn {
+            stroke-width: 4px;
+            stroke: white;
+          }
+
+          /* responsive */
+
+          .title {
+            display: block;
+          }
+          .title-sm {
+            display: none;
+          }
+          .intro {
+            display: block;
+          }
+
+          @media screen and (max-width: 600px) {
+            .title {
+              display: none;
+            }
+            .title-sm {
+              display: block;
+            }
+            .intro {
+              display: none;
+            }
+          }
+
+          /* graphics */
+
+          @keyframes newsletter-anim {
+            to {
+              transform: translateY(10px);
+            }
+          }
+
+          .newsletter {
+            animation-name: newsletter-anim;
+            animation-timing-function: ease-in-out;
+            animation-timing-function: linear;
+            animation-duration: 6s;
+            animation-fill-mode: forwards;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+          }
+
+          /* Clouds */
+          @keyframes cloud-anim-1 {
+            0% {
+              transform: translate(-40px, 0);
+              opacity: 0;
+            }
+            5% {
+              opacity: 0.7;
+            }
+            100% {
+              transform: translate(360px, 0);
+            }
+          }
+
+          @keyframes cloud-anim-2 {
+            0% {
+              transform: translate(-200px, -50px) scale(2);
+              opacity: 0;
+            }
+            20% {
+              opacity: 0.3;
+            }
+            100% {
+              transform: translate(360px, -50px) scale(2);
+            }
+          }
+
+          @keyframes cloud-anim-3 {
+            0% {
+              transform: translate(50px, 10px) scale(1.3);
+              opacity: 0;
+            }
+            20% {
+              opacity: 0.8;
+            }
+            100% {
+              transform: translate(360px, 10px) scale(1.3);
+            }
+          }
+
+          @keyframes cloud-anim-4 {
+            0% {
+              transform: translate(50px, 0px) scale(3);
+              opacity: 0;
+            }
+            40% {
+              opacity: 0.2;
+            }
+            100% {
+              transform: translate(360px, 0px) scale(3);
+            }
+          }
+
+          @keyframes cloud-anim-5 {
+            0% {
+              transform: translate(50px, 50px) scale(1.3);
+              opacity: 0;
+            }
+            20% {
+              opacity: 0.8;
+            }
+            100% {
+              transform: translate(360px, 50px) scale(1.3);
+            }
+          }
+
+          .cloud {
+            fill: white;
+            animation-name: cloud-anim-1;
+            animation-timing-function: linear;
+            animation-duration: 15s;
+            animation-fill-mode: forwards;
+            animation-iteration-count: infinite;
+          }
+
+          .cloud-2 {
+            animation-name: cloud-anim-2;
+            animation-duration: -20s;
+          }
+          .cloud-3 {
+            animation-name: cloud-anim-3;
+            animation-duration: 25s;
+          }
+          .cloud-4 {
+            animation-name: cloud-anim-4;
+            animation-duration: -30s;
+          }
+          .cloud-5 {
+            animation-name: cloud-anim-5;
+            animation-duration: 35s;
+          }
+
+          /* Main cloud */
+          .cloud-main {
+            transform: scale(-5, 5) translate(-57px, 4px);
+            fill: #00a0fa;
+            stroke: white;
+            stroke-width: 2px;
+          }
+        </style>
+
+        <g class="ad-aw">
+          <!-- BG -->
+          <rect class="bg" x="0" y="0" width="992" height="320" rx="6" />
+
+          <!-- Title -->
+          <text class="text title h1" x="32" y="76">
+            Sign up for Azure Weekly
+          </text>
+
+          <!-- title-sm -->
+          <text class="text title-sm h1" x="32" y="76">
+            <tspan x="32" dy="0">Sign up for</tspan>
+            <tspan x="32" dy="90px" style="font-size: 80px">Azure Weekly</tspan>
+          </text>
+
+          <!-- Intro -->
+          <text class="text intro p" x="32" y="130">
+            <tspan x="32" dy="0">
+              Azure Weekly is a summary of the week's top Microsoft Azure news
+              from
+            </tspan>
+            <tspan x="32" dy="1.6em">
+              AI to Availability Zones. Keep on top of all the latest Azure
+              developments!
+            </tspan>
+          </text>
+
+          <!-- click here -->
+          <rect class="btn" x="32" y="200" width="235" height="72" rx="6" />
+          <text class="text h2" x="72" y="248">Click here</text>
+          <text class="text h2" x="300" y="248">or visit azureweekly.info</text>
+
+          <!-- Defs -->
+          <defs>
+            <symbol id="cloud">
+              <path
+                d="M720.923 91.893a9.352 9.352 0 0 0-6.753-8.876 7.772 7.772 0 0 0-10.257-7.014 11.671 11.671 0 0 0-14.458-3.877c-.807.364-1.569.821-2.271 1.36a11.146 11.146 0 0 0-4.38 8.63v.17a9.877 9.877 0 0 0-4.253 2.754A9.506 9.506 0 0 0 676 91.476a9.72 9.72 0 0 0 7.85 9.489h29.223-.093.178a9.354 9.354 0 0 0 7.765-9.072Z"
+              />
+            </symbol>
+          </defs>
+
+          <!-- Clouds -->
+          <g class="clouds">
+            <use href="#cloud" class="cloud cloud-1" />
+            <use href="#cloud" class="cloud cloud-2" />
+            <use href="#cloud" class="cloud cloud-3" />
+            <use href="#cloud" class="cloud cloud-4" />
+            <use href="#cloud" class="cloud cloud-5" />
+
+            <use href="#cloud" class="cloud-main" />
+
+            <g class="cloud-mail">
+              <g class="newsletter">
+                <path
+                  fill="#00A0FA"
+                  d="m780.774 214.659-25.124-10.104-1.961 10.115c-3.347 17.26 2.185 28.055 7.415 34.07 5.349 6.154 11.504 8.75 13.91 9.583l.085.029 51.062 23.095h.127c3.658 1.468 9.467 3.349 15.213 3.349h.572c.261.026.514.044.767.053a11.403 11.403 0 0 0 1.775-.033l.24-.027c27.522-3.477 39.463-21.053 49.811-48.288 3.527-9.301 7.039-19.105 10.317-28.556l-116.308-14.579c-2.659 7.501-5.348 14.8-7.901 21.293Z"
+                  class="newsletter-mask"
+                />
+                <g class="newsletter-body">
+                  <path
+                    fill="#fff"
+                    d="M816.905 135.029s-15.913 53.367-28.917 83.379l8.377 3.256c11.167-27.912 21.918-63.314 26.247-76.943l80.168 15.899-.579 1.836c-3.359 10.747-12.383 38.88-23.439 68.016-10.657 28.057-19.834 34.655-33.051 37.001h-1.088c-4.857 0-8.812-1.632-11.754-4.863-5.656-6.207-5.792-16.468-5.639-20.099l-65.191-26.22c-5.23 26.977 14.901 33.702 15.777 34.008h.102l50.077 22.649c.068 0 7.085 3.35 13.506 3.35h1.106c.211.036.424.056.638.06.181.012.363.012.544 0 20.659-2.61 31.894-13.833 42.925-42.867 13.863-36.559 27.335-80.413 27.335-80.413l-97.144-18.049Z"
+                  />
+                  <path
+                    fill="#fff"
+                    d="m892.378 166.801-64.281-12.787a2068.463 2068.463 0 0 1-7.297 22.879l62.869 16.153a1412.558 1412.558 0 0 0 8.709-26.245Zm-75.669 22.428 62.24 17.302c.85-2.449 1.701-4.864 2.551-7.219l-62.52-16.885c-.742 2.228-1.499 4.495-2.271 6.802Zm-4.142 11.996 61.415 18.994c.901-2.449 1.794-4.872 2.662-7.261l-61.712-18.534a543.725 543.725 0 0 1-2.365 6.801Zm-4.269 11.776 60.785 19.877c.689-1.649 1.386-3.4 2.092-5.279l.757-1.981-61.134-19.555a277.762 277.762 0 0 1-2.5 6.938Zm-4.423 11.469 31.588 12.719-.23 5.671c-.187 4.616.621 11.146 3.547 14.351.85.961 2.432 2.236 5.809 2.236h.144c7.238-1.335 13.676-4.081 21.348-19.801l-60.216-20.235a590.903 590.903 0 0 1-1.99 5.059Z"
+                  />
+                </g>
+              </g>
+            </g>
+          </g>
+          <!-- / Cloud -->
+        </g>
+      </svg>
