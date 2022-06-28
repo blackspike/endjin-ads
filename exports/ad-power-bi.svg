@@ -1,4 +1,4 @@
-<svg
+  <svg
         xmlns="http://www.w3.org/2000/svg"
         width="992"
         height="320"
@@ -8,6 +8,7 @@
         <style>
           * {
             transform-box: fill-box;
+            text-decoration: none;
           }
 
           .bg {
