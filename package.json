@@ -1,0 +1,9 @@
+{
+  "name": "adverts",
+  "scripts": {
+    "dev": "browser-sync start --server --files='_.svg,_.html' --no-inject-changes --no-notify"
+  },
+  "dependencies": {
+    "browser-sync": "^2.27.10"
+  }
+}
