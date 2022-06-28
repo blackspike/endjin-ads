@@ -7,14 +7,25 @@
     <title>ads</title>
 
     <style>
-      svg {
+      svg,
+      img {
         max-width: 100%;
         width: 100%;
         height: auto;
+        margin-block-end: 3rem;
       }
     </style>
   </head>
   <body>
+    <a href="https://endjin.com/microsoft-partner/newsletter/powerbi-weekly/">
+      <img
+        src="./ad-power-bi.svg"
+        alt="Power BI Weekly is a collation of the week's top news and articles from the Power BI ecosystem, all presented to you in one, handy newsletter!"
+        width="992"
+        height="320"
+      />
+    </a>
+
     <a href="https://endjin.com/microsoft-partner/newsletter/powerbi-weekly/">
       <!-- Svg -->
       <svg
@@ -27,10 +38,11 @@
         <style>
           * {
             transform-box: fill-box;
+            text-decoration: none;
           }
 
           .bg {
-            fill: black;
+            fill: #222;
           }
 
           .text {
@@ -55,6 +67,30 @@
           .btn {
             stroke-width: 4px;
             stroke: #f2c811;
+          }
+
+          /* responsive */
+
+          .title {
+            display: block;
+          }
+          .title-sm {
+            display: none;
+          }
+          .intro {
+            display: block;
+          }
+
+          @media screen and (max-width: 600px) {
+            .title {
+              display: none;
+            }
+            .title-sm {
+              display: block;
+            }
+            .intro {
+              display: none;
+            }
           }
 
           /* graphics */
@@ -147,10 +183,20 @@
           <rect class="bg" x="0" y="0" width="992" height="320" rx="6" />
 
           <!-- Title -->
-          <text class="text h1" x="32" y="76">Sign up for Power BI Weekly</text>
+          <text class="text title h1" x="32" y="76">
+            Sign up for Power BI Weekly
+          </text>
+
+          <!-- title-sm -->
+          <text class="text title-sm h1" x="32" y="76">
+            <tspan x="32" dy="0">Sign up for</tspan>
+            <tspan x="32" dy="90px" style="font-size: 80px">
+              Power BI Weekly
+            </tspan>
+          </text>
 
           <!-- Intro -->
-          <text class="text p" x="32" y="130">
+          <text class="text intro p" x="32" y="130">
             <tspan x="32" dy="0">
               Power BI Weekly is a collation of the week's top news and articles
               from
@@ -177,50 +223,50 @@
             <g class="graph" style="transform: translate(834px, 147px)">
               <path
                 d="M6.62206 49.1438C4.30057 47.8715 2.10771 46.3776 0.0741577 44.6827L6.62206 38.1364V49.1438Z"
-                fill="black"
+                fill="#222"
                 class="bar"
                 style="animation-delay: 100ms"
               />
               <path
                 d="M16.4807 52.9139C14.2402 52.3834 12.0494 51.6615 9.93243 50.7561V34.8268L12.4306 32.3418L16.4806 36.4028L16.4807 52.9139Z"
-                fill="black"
+                fill="#222"
                 class="bar"
                 style="animation-delay: 200ms"
               />
               <path
                 d="M26.3394 53.9928C24.1484 54.0259 21.9584 53.88 19.7911 53.5566V39.6766L23.0046 42.8766L26.3394 39.5427V53.9928Z"
-                fill="black"
+                fill="#222"
                 class="bar"
                 style="animation-delay: 300ms"
               />
               <path
                 d="M36.198 52.611C34.0539 53.201 31.8631 53.6065 29.6498 53.8232V36.2572L36.198 29.7109V52.611Z"
-                fill="black"
+                fill="#222"
                 class="bar"
                 style="animation-delay: 400ms"
               />
               <path
                 d="M46.0564 48.4407C43.9712 49.6726 41.7798 50.7152 39.5085 51.5562V26.4016L46.0564 19.8553V48.4407Z"
-                fill="black"
+                fill="#222"
                 class="bar"
                 style="animation-delay: 500ms"
               />
               <path
                 d="M55.9151 40.2215C53.9582 42.4729 51.7626 44.5053 49.3669 46.2827V16.582L51.707 14.218L55.9147 18.4126L55.9151 40.2215Z"
-                fill="black"
+                fill="#222"
                 class="bar"
                 style="animation-delay: 600ms"
               />
               <path
                 d="M65.7375 13.77V15.8915C65.4051 23.0102 63.1597 29.9077 59.2375 35.8578V16.17L63.4695 0.507477C64.9932 4.75583 65.7844 9.23204 65.8096 13.7453L65.7375 13.77Z"
-                fill="black"
+                fill="#222"
                 class="bar"
                 style="animation-delay: 700ms"
               />
             </g>
             <path
               class="arrow"
-              fill="black"
+              fill="#222"
               d="m890.036 160.018-4.329-4.328-28.703 28.707-10.574-10.583-15.218 15.214a39.311 39.311 0 0 1-3.796-4.474l19.014-19.008 10.574 10.583 24.568-24.609-4.317-4.316 17.45-4.679-4.669 17.493Z"
             />
             <path
