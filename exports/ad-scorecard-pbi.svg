@@ -1,0 +1,166 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="992" height="320" xmlns:xlink="http://www.w3.org/1999/xlink"
+  viewBox="0 0 992 320">
+
+  <style>
+    /* graphics */
+    @keyframes masker {
+      to {
+        transform: translate(160px, 60px);
+      }
+    }
+
+    .line {
+      fill: none;
+      opacity: .7;
+      stroke: #000;
+      stroke-linecap: round;
+      stroke-miterlimit: 10px;
+      stroke-width: 16px;
+    }
+
+    #normal {
+      transform: translate(-5px, -5px);
+    }
+
+    #lg {
+      transform: scale(1.2);
+      transform-origin: 75% 50%;
+    }
+
+    #glass,
+    #mask {
+      transform: translate(-150px, 170px);
+      animation-name: masker;
+      animation-duration: 5s;
+      animation-timing-function: ease-in-out;
+      animation-direction: alternate;
+      animation-iteration-count: infinite;
+    }
+  </style>
+
+  <defs>
+    <linearGradient id="linear-gradient" x1="905.53888" y1="16.04806" x2="905.53888" y2="312.84301"
+      gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#e4a910" />
+      <stop offset=".32" stop-color="#dfa311" />
+      <stop offset=".63" stop-color="#d08c0c" />
+      <stop offset="1" stop-color="#c17f06" />
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="782.08503" y1="54.83748" x2="782.08503" y2="313.5101"
+      gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#f6d54e" />
+      <stop offset=".31" stop-color="#eec634" />
+      <stop offset=".57" stop-color="#e9b822" />
+      <stop offset="1" stop-color="#e9b21c" />
+    </linearGradient>
+    <linearGradient id="linear-gradient-3" x1="653.45027" y1="106.06218" x2="653.45027" y2="312.66793"
+      gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#f8e386" />
+      <stop offset=".31" stop-color="#f6dc65" />
+      <stop offset=".57" stop-color="#f7db5e" />
+      <stop offset="1" stop-color="#fad859" />
+    </linearGradient>
+
+    <g id="graphic">
+      <g>
+        <path
+          d="m992,312.13979c0,4.33882-3.52137,7.86019-7.86019,7.86019h-157.20201c-4.33882,0-7.86004-3.52137-7.86004-7.86019V58.877c0-4.33882,3.52122-7.86019,7.86004-7.86019h39.3005c4.33882,0,7.86004-3.52137,7.86004-7.86004,0-17.33415,14.10631-31.44046,31.44046-31.44046s31.44046,14.10631,31.44046,31.44046c0,4.33867,3.52122,7.86004,7.86004,7.86004h39.3005c4.33882,0,7.86019,3.52137,7.86019,7.86019v253.26279Z"
+          fill="url(#linear-gradient)" />
+        <circle cx="905.50381" cy="39.22668" r="11.71057" opacity=".7" />
+        <g>
+          <line x1="858.48308" y1="153.59354" x2="881.92354" y2="153.59354" class="line" />
+          <line x1="929.15406" y1="153.59354" x2="952.59453" y2="153.59354" class="line" />
+          <line x1="858.48308" y1="114.29296" x2="952.52455" y2="114.29296" class="line" />
+        </g>
+        <g>
+          <line x1="858.48308" y1="233.51957" x2="881.92354" y2="233.51957" class="line" />
+          <line x1="929.15406" y1="233.51957" x2="952.59453" y2="233.51957" class="line" />
+          <line x1="858.48308" y1="272.82015" x2="952.52455" y2="272.82015" class="line" />
+        </g>
+        <line x1="858.48308" y1="193.27839" x2="952.52455" y2="193.27839" class="line" />
+      </g>
+      <g>
+        <path
+          d="m868.54615,312.13979c0,4.33882-3.52137,7.86019-7.86019,7.86019h-157.20201c-4.33882,0-7.86004-3.52137-7.86004-7.86019V101.03612c0-4.33882,3.52122-7.86019,7.86004-7.86019h39.3005c4.33882,0,7.86004-3.52137,7.86004-7.86004,0-17.33415,14.10631-31.44046,31.44046-31.44046s31.44046,14.10631,31.44046,31.44046c0,4.33867,3.52122,7.86004,7.86004,7.86004h39.3005c4.33882,0,7.86019,3.52137,7.86019,7.86019v211.10367Z"
+          fill="url(#linear-gradient-2)" />
+        <g>
+          <line x1="735.0293" y1="194.44881" x2="758.46977" y2="194.44881" class="line" />
+          <line x1="805.70029" y1="194.44881" x2="829.14075" y2="194.44881" class="line" />
+          <line x1="735.0293" y1="155.14823" x2="829.07077" y2="155.14823" class="line" />
+        </g>
+        <g>
+          <line x1="735.0293" y1="273.43423" x2="758.46977" y2="273.43423" class="line" />
+          <line x1="805.70029" y1="273.43423" x2="829.14075" y2="273.43423" class="line" />
+        </g>
+        <circle cx="782.05004" cy="81.38579" r="11.71057" opacity=".7" />
+        <line x1="735.0293" y1="234.13365" x2="829.07077" y2="234.13365" class="line" />
+      </g>
+      <g>
+        <path
+          d="m739.91139,312.13979c0,4.33882-3.52137,7.86019-7.86019,7.86019h-157.20201c-4.33882,0-7.86004-3.52137-7.86004-7.86019v-165.46718c0-4.33882,3.52122-7.86019,7.86004-7.86019h39.3005c4.33882,0,7.86004-3.52137,7.86004-7.86004,0-17.33415,14.10631-31.44046,31.44046-31.44046s31.44046,14.10631,31.44046,31.44046c0,4.33867,3.52122,7.86004,7.86004,7.86004h39.3005c4.33882,0,7.86019,3.52137,7.86019,7.86019v165.46718Z"
+          fill="url(#linear-gradient-3)" />
+        <g>
+          <line x1="606.42946" y1="233.13373" x2="629.86992" y2="233.13373" class="line" />
+          <line x1="606.42946" y1="272.43431" x2="629.86992" y2="272.43431" class="line" />
+          <line x1="677.10045" y1="233.13373" x2="700.54091" y2="233.13373" class="line" />
+          <line x1="677.10045" y1="272.43431" x2="700.54091" y2="272.43431" class="line" />
+          <line x1="606.42946" y1="193.83315" x2="700.47093" y2="193.83315" class="line" />
+        </g>
+        <circle cx="653.4502" cy="127.02228" r="11.71057" opacity=".7" />
+      </g>
+    </g>
+
+
+  </defs>
+
+  <!-- Banner -->
+  <g id="pbi">
+
+    <!-- BG -->
+    <rect id="bg" x="0" width="992" height="320" rx="6" ry="6" fill="#f8f6ee" />
+
+    <!-- Graphics -->
+
+    <use href="#graphic" id="normal" />
+
+    <g id="lg-wrapper" mask="url(#mask-circle)">
+      <use href="#graphic" id="lg" />
+    </g>
+
+    <!-- Content -->
+    <g id="content">
+      <g id="strapline" opacity=".5">
+        <text transform="translate(36 56)" font-family="Arial-BoldMT, Arial" font-size="23" font-weight="700">
+          <tspan x="0" y="0" letter-spacing=".16em">DISCOVER YOUR FREE 5-MINUTE</tspan>
+        </text>
+      </g>
+      <text id="footer" transform="translate(36 298)" font-size="28" letter-spacing="-.04em" opacity=".8">
+        <tspan x="0" y="0" font-family="ArialMT, Arial">Become a more </tspan>
+        <tspan x="191" y="0" font-family="Arial-BoldMT, Arial" font-weight="700">data-driven</tspan>
+        <tspan x="330" y="0" xml:space="preserve" font-family="ArialMT, Arial"> organisation</tspan>
+      </text>
+      <g id="power-bi" opacity=".8">
+        <text transform="translate(29 167)" font-family="Arial-BoldMT, Arial" font-size="122" font-weight="700"
+          letter-spacing="-.04em">
+          Power BI
+        </text>
+      </g>
+      <g id="maturity-core" opacity=".6">
+        <text transform="translate(32 246)" font-family="Arial-BoldMT, Arial" font-size="75" font-weight="700"
+          letter-spacing="-.04em">Maturity Score
+        </text>
+      </g>
+    </g>
+
+
+    <!-- Glass -->
+    <path id="glass" fill="#323130"
+      d="m806.20338,139.98265c-1.98314,0-3.85718-.77341-5.2553-2.18143l-25.21547-25.21547c-10.42135,8.10107-23.23235,12.52346-36.44991,12.52346-32.80095,0-59.49385-26.6929-59.49385-59.49385s26.6929-59.49385,59.49385-59.49385,59.49385,26.6929,59.49385,59.49385c0,13.21755-4.42237,26.03847-12.52346,36.45982l25.21547,25.21547c2.89537,2.89537,2.89537,7.61521,0,10.5205-1.408,1.39809-3.27214,2.17151-5.26519,2.17151Zm-66.93059-118.98771c-24.60071,0-44.62039,20.01968-44.62039,44.62039s20.01968,44.62039,44.62039,44.62039,44.62039-20.01967,44.62039-44.62039-20.00976-44.62039-44.62039-44.62039Z" />
+
+
+    <!-- Mask -->
+    <mask id="mask-circle">
+      <circle id="mask" cx="739.27279" cy="65.61533" r="44.62039" fill="#fff" />
+    </mask>
+  </g>
+</svg>
