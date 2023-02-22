@@ -18,6 +18,10 @@
       stroke-width: 16px;
     }
 
+    #content {
+      transform: translateY(-7px);
+    }
+
     #normal {
       transform: translate(-5px, -5px);
     }
