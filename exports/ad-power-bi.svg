@@ -1,414 +1,286 @@
-  <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="992"
-        height="320"
-        fill="none"
-        viewBox="0 0 992 320"
-      >
-        <style>
-          * {
-            transform-box: fill-box;
-            text-decoration: none;
-          }
+<svg xmlns="http://www.w3.org/2000/svg" width="992" height="320" fill="none" viewBox="0 0 992 320">
+  <style>
+    * {
+      transform-box: fill-box;
+      text-decoration: none;
+    }
 
-          .bg {
-            fill: #222;
-          }
+    .bg {
+      fill: #222;
+    }
 
-          .text {
-            font-family: var(--ff-heading, "Inter var"), sans-serif;
-            font-size: 50px;
-            fill: #f2c811;
-          }
+    .text {
+      font-family: var(--ff-heading, "Inter var"), sans-serif;
+      font-size: 50px;
+      fill: #f2c811;
+    }
 
-          .h1 {
-            font-weight: 600;
-            font-size: 50px;
-          }
+    .h1 {
+      font-weight: 600;
+      font-size: 50px;
+    }
 
-          .h2 {
-            font-size: 33px;
-          }
+    .h2 {
+      font-size: 33px;
+    }
 
-          .p {
-            font-size: 20px;
-          }
+    .p {
+      font-size: 20px;
+    }
 
-          .btn {
-            stroke-width: 4px;
-            stroke: #f2c811;
-          }
+    .btn {
+      stroke-width: 4px;
+      stroke: #f2c811;
+    }
 
-          /* responsive */
+    /* responsive */
 
-          .title {
-            display: block;
-          }
-          .title-sm {
-            display: none;
-          }
-          .intro {
-            display: block;
-          }
+    .title {
+      display: block;
+    }
 
-          @media screen and (max-width: 600px) {
-            .title {
-              display: none;
-            }
-            .title-sm {
-              display: block;
-            }
-            .intro {
-              display: none;
-            }
-          }
+    .title-sm {
+      display: none;
+    }
 
-          /* graphics */
+    .intro {
+      display: block;
+    }
 
-          @keyframes fan-anim {
-            0% {
-              opacity: 0;
-            }
-            5% {
-              opacity: 1;
-            }
-            50% {
-              opacity: 1;
-            }
-            100% {
-              opacity: 1;
-            }
-          }
+    @media screen and (max-width: 600px) {
+      .title {
+        display: none;
+      }
 
-          .bar,
-          .fan {
-            opacity: 0;
-            animation-name: fan-anim;
-            animation-timing-function: cubic-bezier(0.83, 0, 0.17, 1);
-            animation-duration: 15s;
-            animation-fill-mode: forwards;
-            animation-iteration-count: infinite;
-          }
+      .title-sm {
+        display: block;
+      }
 
-          @keyframes cal-anim {
-            0% {
-              transform: translateY(-500px) scale(1) translateX(-20px);
-            }
-            50% {
-              transform: translateY(-500px) scale(1) translateX(-20px);
-            }
-            55% {
-              transform: translateY(0) scale(1.3) translateX(-20px);
-            }
-            90% {
-              transform: translateY(0) scale(1.3) translateX(-20px);
-            }
-            95% {
-              transform: translateY(500px) scale(1.3) translateX(-20px);
-            }
-            100% {
-              transform: translateY(500px) scale(1) translateX(-20px);
-            }
-          }
+      .intro {
+        display: none;
+      }
+    }
 
-          .cal {
-            transform: translateY(-500px) scale(1);
-            animation-name: cal-anim;
-            animation-timing-function: cubic-bezier(0.83, 0, 0.17, 1);
-            animation-duration: 40s;
-            animation-fill-mode: forwards;
-            animation-iteration-count: infinite;
-            transform-origin: center center;
-          }
+    /* graphics */
 
-          @keyframes logo-anim {
-            0% {
-              transform: translateY(-500px);
-            }
-            5% {
-              transform: translateY(0);
-            }
-            50% {
-              transform: translateY(0);
-            }
-            55% {
-              transform: translateY(500px);
-            }
-            100% {
-              transform: translateY(500px);
-            }
-          }
+    @keyframes fan-anim {
+      0% {
+        opacity: 0;
+      }
 
-          .logo {
-            animation-name: logo-anim;
-            animation-timing-function: cubic-bezier(0.83, 0, 0.17, 1);
-            animation-duration: 40s;
-            animation-fill-mode: forwards;
-            animation-iteration-count: infinite;
-          }
-        </style>
+      5% {
+        opacity: 1;
+      }
 
-        <g class="ad-power-bi">
-          <!-- BG -->
-          <rect class="bg" x="0" y="0" width="992" height="320" rx="6" />
+      50% {
+        opacity: 1;
+      }
 
-          <!-- Title -->
-          <text class="text title h1" x="32" y="76">
-            Sign up for Power BI Weekly
-          </text>
+      100% {
+        opacity: 1;
+      }
+    }
 
-          <!-- title-sm -->
-          <text class="text title-sm h1" x="32" y="76">
-            <tspan x="32" dy="0">Sign up for</tspan>
-            <tspan x="32" dy="90px" style="font-size: 80px">
-              Power BI Weekly
-            </tspan>
-          </text>
+    .bar,
+    .fan {
+      opacity: 0;
+      animation-name: fan-anim;
+      animation-timing-function: cubic-bezier(0.83, 0, 0.17, 1);
+      animation-duration: 15s;
+      animation-fill-mode: forwards;
+      animation-iteration-count: infinite;
+    }
 
-          <!-- Intro -->
-          <text class="text intro p" x="32" y="130">
-            <tspan x="32" dy="0">
-              Power BI Weekly is a collation of the week's top news and articles
-              from
-            </tspan>
-            <tspan x="32" dy="1.6em">
-              the Power BI ecosystem, all presented to you in one, handy
-              newsletter!
-            </tspan>
-          </text>
+    @keyframes cal-anim {
+      0% {
+        transform: translateY(-500px) scale(1) translateX(-20px);
+      }
 
-          <!-- click here -->
-          <rect class="btn" x="32" y="200" width="235" height="72" rx="6" />
-          <text class="text h2" x="72" y="248">Click here</text>
-          <text class="text h2" x="300" y="248">
-            or visit powerbiweekly.info
-          </text>
+      50% {
+        transform: translateY(-500px) scale(1) translateX(-20px);
+      }
 
-          <g class="logo">
-            <path
-              class="bg-circle"
-              fill="#F2C811"
-              d="M859.757 116.909a44.124 44.124 0 0 0-43.903 39.657 44.12 44.12 0 1 0 43.903-39.657Z"
-            />
-            <g class="graph" style="transform: translate(834px, 147px)">
-              <path
-                d="M6.62206 49.1438C4.30057 47.8715 2.10771 46.3776 0.0741577 44.6827L6.62206 38.1364V49.1438Z"
-                fill="#222"
-                class="bar"
-                style="animation-delay: 100ms"
-              />
-              <path
-                d="M16.4807 52.9139C14.2402 52.3834 12.0494 51.6615 9.93243 50.7561V34.8268L12.4306 32.3418L16.4806 36.4028L16.4807 52.9139Z"
-                fill="#222"
-                class="bar"
-                style="animation-delay: 200ms"
-              />
-              <path
-                d="M26.3394 53.9928C24.1484 54.0259 21.9584 53.88 19.7911 53.5566V39.6766L23.0046 42.8766L26.3394 39.5427V53.9928Z"
-                fill="#222"
-                class="bar"
-                style="animation-delay: 300ms"
-              />
-              <path
-                d="M36.198 52.611C34.0539 53.201 31.8631 53.6065 29.6498 53.8232V36.2572L36.198 29.7109V52.611Z"
-                fill="#222"
-                class="bar"
-                style="animation-delay: 400ms"
-              />
-              <path
-                d="M46.0564 48.4407C43.9712 49.6726 41.7798 50.7152 39.5085 51.5562V26.4016L46.0564 19.8553V48.4407Z"
-                fill="#222"
-                class="bar"
-                style="animation-delay: 500ms"
-              />
-              <path
-                d="M55.9151 40.2215C53.9582 42.4729 51.7626 44.5053 49.3669 46.2827V16.582L51.707 14.218L55.9147 18.4126L55.9151 40.2215Z"
-                fill="#222"
-                class="bar"
-                style="animation-delay: 600ms"
-              />
-              <path
-                d="M65.7375 13.77V15.8915C65.4051 23.0102 63.1597 29.9077 59.2375 35.8578V16.17L63.4695 0.507477C64.9932 4.75583 65.7844 9.23204 65.8096 13.7453L65.7375 13.77Z"
-                fill="#222"
-                class="bar"
-                style="animation-delay: 700ms"
-              />
-            </g>
-            <path
-              class="arrow"
-              fill="#222"
-              d="m890.036 160.018-4.329-4.328-28.703 28.707-10.574-10.583-15.218 15.214a39.311 39.311 0 0 1-3.796-4.474l19.014-19.008 10.574 10.583 24.568-24.609-4.317-4.316 17.45-4.679-4.669 17.493Z"
-            />
-            <path
-              class="fan 26"
-              style="animation-delay: 260ms"
-              fill="#F2C811"
-              d="M864.135 29.14c-1.419-.06-2.837-.06-4.256-.06s-3.105 0-4.645.097v81.889a50.617 50.617 0 0 1 4.524-.218c1.528 0 2.922.085 4.377.206V29.141Z"
-            />
-            <path
-              class="fan 25"
-              style="animation-delay: 250ms"
-              fill="#F2C811"
-              d="M852.263 111.418a48.844 48.844 0 0 0-8.488 2.061l-18.711-76.58a129.483 129.483 0 0 1 8.428-2.073l18.771 76.592Z"
-            />
-            <path
-              class="fan 24"
-              style="animation-delay: 240ms"
-              fill="#F2C811"
-              d="M832.886 118.679 798.253 51.41a119 119 0 0 1 7.749-3.903l34.572 67.159a49.783 49.783 0 0 0-7.688 4.013Z"
-            />
-            <path
-              class="fan 23"
-              style="animation-delay: 230ms"
-              fill="#F2C811"
-              d="m776.353 72.116 47.207 54.213a50.515 50.515 0 0 1 6.512-5.722L782.853 66.37a103.71 103.71 0 0 0-3.032 2.582l-.57.51a66.147 66.147 0 0 0-2.898 2.654Z"
-            />
-            <path
-              class="fan 22"
-              style="animation-delay: 220ms"
-              fill="#F2C811"
-              d="m816.309 135.966-56.351-39.18a105.368 105.368 0 0 1 4.911-7.092l56.412 39.168a50.735 50.735 0 0 0-4.972 7.104Z"
-            />
-            <path
-              class="fan 21"
-              style="animation-delay: 210ms"
-              fill="#F2C811"
-              d="m751.046 124.05 60.522 23.033a48.507 48.507 0 0 1 3.128-8.086l-60.631-23.033a109.767 109.767 0 0 0-3.019 8.086Z"
-            />
-            <path
-              class="fan 20"
-              style="animation-delay: 200ms"
-              fill="#F2C811"
-              d="m749.227 151.871 60.389 7.783c.075-2.895.399-5.779.97-8.619l-60.4-7.783a103.84 103.84 0 0 0-.959 8.619Z"
-            />
-            <path
-              class="fan 19"
-              style="animation-delay: 190ms"
-              fill="#F2C811"
-              d="m810.598 171.026-56.618 6.4c-.46-2.873-.812-5.697-1.055-8.595l56.69-6.425c.08 2.896.408 5.78.983 8.62Z"
-            />
-            <path
-              class="fan 18"
-              style="animation-delay: 180ms"
-              fill="#F2C811"
-              d="m764.615 200.932 49.815-18.451a49.347 49.347 0 0 1-3.02-8.122l-49.875 18.463a103.742 103.742 0 0 0 3.08 8.11Z"
-            />
-            <path
-              class="fan 17"
-              style="animation-delay: 170ms"
-              fill="#F2C811"
-              d="m820.905 192.737-40.744 27.677c-1.746-2.304-3.383-4.643-4.923-7.14l40.816-27.7a50.822 50.822 0 0 0 4.851 7.163Z"
-            />
-            <path
-              class="fan 16"
-              style="animation-delay: 160ms"
-              fill="#F2C811"
-              d="m823.185 195.283-30.316 33.944a94.38 94.38 0 0 0 6.488 5.758l30.315-33.871a49.558 49.558 0 0 1-6.487-5.831Z"
-            />
-            <path
-              class="fan 15"
-              style="animation-delay: 150ms"
-              fill="#F2C811"
-              d="M820.481 243.968a93.276 93.276 0 0 1-7.664-4.061l19.644-36.853a49.858 49.858 0 0 0 7.652 4.097l-19.632 36.817Z"
-            />
-            <path
-              class="fan 14"
-              style="animation-delay: 140ms"
-              fill="#F2C811"
-              d="M834.013 245.277a87.907 87.907 0 0 0 8.416 2.098l9.337-36.866a48.61 48.61 0 0 1-8.416-2.121l-9.337 36.889Z"
-            />
-            <path
-              class="fan 13"
-              style="animation-delay: 130ms"
-              fill="#F2C811"
-              d="M855.634 210.97c1.37.121 2.74.182 4.123.182.776 0 1.71-.012 2.377-.049a56.723 56.723 0 0 0 2.013-.145l-.364 79.901c-1.297.061-2.595.061-3.892.061-.778 0-1.55-.022-2.32-.043a83.868 83.868 0 0 0-2.3-.042l.363-79.865Z"
-            />
-            <path
-              class="fan 12"
-              style="animation-delay: 120ms"
-              fill="#F2C811"
-              d="M875.764 208.497a50.206 50.206 0 0 1-8.416 2.061l12.672 52.334c2.85-.558 5.663-1.213 8.489-2.013l-12.745-52.382Z"
-            />
-            <path
-              class="fan 11"
-              style="animation-delay: 110ms"
-              fill="#F2C811"
-              d="M879.014 207.248a50.774 50.774 0 0 0 7.676-4.037l30.606 58.759a120.84 120.84 0 0 1-7.7 3.976l-30.582-58.698Z"
-            />
-            <path
-              class="fan 10"
-              style="animation-delay: 100ms"
-              fill="#F2C811"
-              d="M889.539 201.223a51.018 51.018 0 0 0 6.488-5.746l20.687 23.434a81.338 81.338 0 0 1-6.56 5.685l-20.615-23.373Z"
-            />
-            <path
-              class="fan 9"
-              style="animation-delay: 90ms"
-              fill="#F2C811"
-              d="m903.29 185.767 48.748 33.847a114.697 114.697 0 0 1-5.033 7.067l-48.674-33.786a50.878 50.878 0 0 0 4.959-7.128Z"
-            />
-            <path
-              class="fan 8"
-              style="animation-delay: 80ms"
-              fill="#F2C811"
-              d="m932.987 184.154-24.968-9.601a50.959 50.959 0 0 1-3.104 8.098l24.895 9.517a76.292 76.292 0 0 0 3.177-8.014Z"
-            />
-            <path
-              class="fan 7"
-              style="animation-delay: 70ms"
-              fill="#F2C811"
-              d="m972.773 170.395-62.886-7.783v.752a49.33 49.33 0 0 1-1.006 7.855l62.801 7.783a114.57 114.57 0 0 0 1.091-8.607Z"
-            />
-            <path
-              class="fan 6"
-              style="animation-delay: 60ms"
-              fill="#F2C811"
-              d="m908.832 150.526 46.286-5.528c.436 2.885.74 5.71.933 8.619l-46.176 5.516a50.658 50.658 0 0 0-1.043-8.607Z"
-            />
-            <path
-              class="fan 5"
-              style="animation-delay: 50ms"
-              fill="#F2C811"
-              d="m938.492 126.377-33.601 12.669a50.647 50.647 0 0 1 3.092 8.097l33.517-12.595a85.396 85.396 0 0 0-3.008-8.171Z"
-            />
-            <path
-              class="fan 4"
-              style="animation-delay: 40ms"
-              fill="#F2C811"
-              d="m898.27 128.887 22.761-15.663a80.914 80.914 0 0 1 4.887 7.165l-22.676 15.602a49.462 49.462 0 0 0-4.972-7.104Z"
-            />
-            <path
-              class="fan 3"
-              style="animation-delay: 30ms"
-              fill="#F2C811"
-              d="m904.661 103.465-15.207 17.118a49.811 49.811 0 0 1 6.512 5.721l15.158-17.068a71.304 71.304 0 0 0-6.463-5.771Z"
-            />
-            <path
-              class="fan 2"
-              style="animation-delay: 20ms"
-              fill="#F2C811"
-              d="m878.868 114.63 8.489-16.05a68.928 68.928 0 0 1 7.688 4.037l-8.488 16.002a50.2 50.2 0 0 0-7.689-3.989Z"
-            />
-            <path
-              class="fan 1"
-              style="animation-delay: 10ms"
-              fill="#F2C811"
-              d="m868.985 104.362-1.734 7.044c2.884.423 5.725 1.1 8.489 2.024l1.734-7.007a56.02 56.02 0 0 0-8.489-2.061Z"
-            />
-          </g>
+      55% {
+        transform: translateY(0) scale(1.3) translateX(-20px);
+      }
 
-          <!-- Cal -->
-          <g class="cal">
-            <path
-              fill="#F2C811"
-              d="M910.867 92.855V75.818H893.83v17.036h-68.146V75.818h-17.036v17.036h-25.555v153.327H936.42V92.855h-25.553Zm8.518 136.291H800.13V134h119.254v95.146h.001Z"
-              class="Vector"
-            />
-            <path
-              fill="#F2C811"
-              d="M824.688 196.55h7.136v-28.192h10.453v-5.952h-28.042v5.952h10.453v28.192Zm28.943-1.075c2.123 1.039 4.602 1.559 7.436 1.559 2.823 0 5.296-.52 7.419-1.559 2.123-1.039 3.776-2.493 4.96-4.36 1.184-1.867 1.775-4.045 1.775-6.535v-22.174h-7.219v21.557c0 1.301-.286 2.457-.858 3.468a6.153 6.153 0 0 1-2.418 2.384c-1.039.578-2.259.867-3.659.867-1.39 0-2.606-.289-3.651-.867a6.142 6.142 0 0 1-2.426-2.384c-.572-1.011-.858-2.167-.858-3.468v-21.557h-7.219v22.174c0 2.49.589 4.668 1.767 6.535 1.177 1.867 2.828 3.321 4.951 4.36Zm50.598-4.877h-15.854v-8.153h14.604v-5.951h-14.604v-8.136h15.788v-5.952h-23.007v34.144h23.073v-5.952Z"
-              class="Vector"
-            />
-          </g>
-        </g>
-      </svg>
+      90% {
+        transform: translateY(0) scale(1.3) translateX(-20px);
+      }
+
+      95% {
+        transform: translateY(500px) scale(1.3) translateX(-20px);
+      }
+
+      100% {
+        transform: translateY(500px) scale(1) translateX(-20px);
+      }
+    }
+
+    .cal {
+      transform: translateY(-500px) scale(1);
+      animation-name: cal-anim;
+      animation-timing-function: cubic-bezier(0.83, 0, 0.17, 1);
+      animation-duration: 40s;
+      animation-fill-mode: forwards;
+      animation-iteration-count: infinite;
+      transform-origin: center center;
+    }
+
+    @keyframes logo-anim {
+      0% {
+        transform: translateY(-500px);
+      }
+
+      5% {
+        transform: translateY(0);
+      }
+
+      50% {
+        transform: translateY(0);
+      }
+
+      55% {
+        transform: translateY(500px);
+      }
+
+      100% {
+        transform: translateY(500px);
+      }
+    }
+
+    .logo {
+      animation-name: logo-anim;
+      animation-timing-function: cubic-bezier(0.83, 0, 0.17, 1);
+      animation-duration: 40s;
+      animation-fill-mode: forwards;
+      animation-iteration-count: infinite;
+    }
+  </style>
+
+  <g class="ad-power-bi">
+    <!-- BG -->
+    <rect class="bg" x="0" y="0" width="992" height="320" rx="6" />
+
+    <!-- Title -->
+    <text class="text title h1" x="32" y="76">
+      Sign up for Power BI Weekly
+    </text>
+
+    <!-- title-sm -->
+    <text class="text title-sm h1" x="32" y="76">
+      <tspan x="32" dy="0">Sign up for</tspan>
+      <tspan x="32" dy="90px" style="font-size: 80px">
+        Power BI Weekly
+      </tspan>
+    </text>
+
+    <!-- Intro -->
+    <text class="text intro p" x="32" y="130">
+      <tspan x="32" dy="0">
+        Power BI Weekly is a collation of the week's top news and articles
+        from
+      </tspan>
+      <tspan x="32" dy="1.6em">
+        the Power BI ecosystem, all presented to you in one, handy
+        newsletter!
+      </tspan>
+    </text>
+
+    <!-- click here -->
+    <rect class="btn" x="32" y="200" width="235" height="72" rx="6" />
+    <text class="text h2" x="72" y="248">Click here</text>
+    <text class="text h2" x="300" y="248">
+      or visit powerbiweekly.info
+    </text>
+
+    <g class="logo">
+      <path class="bg-circle" fill="#F2C811"
+        d="M859.757 116.909a44.124 44.124 0 0 0-43.903 39.657 44.12 44.12 0 1 0 43.903-39.657Z" />
+      <g class="graph" style="transform: translate(834px, 147px)">
+        <path d="M6.62206 49.1438C4.30057 47.8715 2.10771 46.3776 0.0741577 44.6827L6.62206 38.1364V49.1438Z"
+          fill="#222" class="bar" style="animation-delay: 100ms" />
+        <path
+          d="M16.4807 52.9139C14.2402 52.3834 12.0494 51.6615 9.93243 50.7561V34.8268L12.4306 32.3418L16.4806 36.4028L16.4807 52.9139Z"
+          fill="#222" class="bar" style="animation-delay: 200ms" />
+        <path
+          d="M26.3394 53.9928C24.1484 54.0259 21.9584 53.88 19.7911 53.5566V39.6766L23.0046 42.8766L26.3394 39.5427V53.9928Z"
+          fill="#222" class="bar" style="animation-delay: 300ms" />
+        <path d="M36.198 52.611C34.0539 53.201 31.8631 53.6065 29.6498 53.8232V36.2572L36.198 29.7109V52.611Z"
+          fill="#222" class="bar" style="animation-delay: 400ms" />
+        <path d="M46.0564 48.4407C43.9712 49.6726 41.7798 50.7152 39.5085 51.5562V26.4016L46.0564 19.8553V48.4407Z"
+          fill="#222" class="bar" style="animation-delay: 500ms" />
+        <path
+          d="M55.9151 40.2215C53.9582 42.4729 51.7626 44.5053 49.3669 46.2827V16.582L51.707 14.218L55.9147 18.4126L55.9151 40.2215Z"
+          fill="#222" class="bar" style="animation-delay: 600ms" />
+        <path
+          d="M65.7375 13.77V15.8915C65.4051 23.0102 63.1597 29.9077 59.2375 35.8578V16.17L63.4695 0.507477C64.9932 4.75583 65.7844 9.23204 65.8096 13.7453L65.7375 13.77Z"
+          fill="#222" class="bar" style="animation-delay: 700ms" />
+      </g>
+      <path class="arrow" fill="#222"
+        d="m890.036 160.018-4.329-4.328-28.703 28.707-10.574-10.583-15.218 15.214a39.311 39.311 0 0 1-3.796-4.474l19.014-19.008 10.574 10.583 24.568-24.609-4.317-4.316 17.45-4.679-4.669 17.493Z" />
+      <path class="fan 26" style="animation-delay: 260ms" fill="#F2C811"
+        d="M864.135 29.14c-1.419-.06-2.837-.06-4.256-.06s-3.105 0-4.645.097v81.889a50.617 50.617 0 0 1 4.524-.218c1.528 0 2.922.085 4.377.206V29.141Z" />
+      <path class="fan 25" style="animation-delay: 250ms" fill="#F2C811"
+        d="M852.263 111.418a48.844 48.844 0 0 0-8.488 2.061l-18.711-76.58a129.483 129.483 0 0 1 8.428-2.073l18.771 76.592Z" />
+      <path class="fan 24" style="animation-delay: 240ms" fill="#F2C811"
+        d="M832.886 118.679 798.253 51.41a119 119 0 0 1 7.749-3.903l34.572 67.159a49.783 49.783 0 0 0-7.688 4.013Z" />
+      <path class="fan 23" style="animation-delay: 230ms" fill="#F2C811"
+        d="m776.353 72.116 47.207 54.213a50.515 50.515 0 0 1 6.512-5.722L782.853 66.37a103.71 103.71 0 0 0-3.032 2.582l-.57.51a66.147 66.147 0 0 0-2.898 2.654Z" />
+      <path class="fan 22" style="animation-delay: 220ms" fill="#F2C811"
+        d="m816.309 135.966-56.351-39.18a105.368 105.368 0 0 1 4.911-7.092l56.412 39.168a50.735 50.735 0 0 0-4.972 7.104Z" />
+      <path class="fan 21" style="animation-delay: 210ms" fill="#F2C811"
+        d="m751.046 124.05 60.522 23.033a48.507 48.507 0 0 1 3.128-8.086l-60.631-23.033a109.767 109.767 0 0 0-3.019 8.086Z" />
+      <path class="fan 20" style="animation-delay: 200ms" fill="#F2C811"
+        d="m749.227 151.871 60.389 7.783c.075-2.895.399-5.779.97-8.619l-60.4-7.783a103.84 103.84 0 0 0-.959 8.619Z" />
+      <path class="fan 19" style="animation-delay: 190ms" fill="#F2C811"
+        d="m810.598 171.026-56.618 6.4c-.46-2.873-.812-5.697-1.055-8.595l56.69-6.425c.08 2.896.408 5.78.983 8.62Z" />
+      <path class="fan 18" style="animation-delay: 180ms" fill="#F2C811"
+        d="m764.615 200.932 49.815-18.451a49.347 49.347 0 0 1-3.02-8.122l-49.875 18.463a103.742 103.742 0 0 0 3.08 8.11Z" />
+      <path class="fan 17" style="animation-delay: 170ms" fill="#F2C811"
+        d="m820.905 192.737-40.744 27.677c-1.746-2.304-3.383-4.643-4.923-7.14l40.816-27.7a50.822 50.822 0 0 0 4.851 7.163Z" />
+      <path class="fan 16" style="animation-delay: 160ms" fill="#F2C811"
+        d="m823.185 195.283-30.316 33.944a94.38 94.38 0 0 0 6.488 5.758l30.315-33.871a49.558 49.558 0 0 1-6.487-5.831Z" />
+      <path class="fan 15" style="animation-delay: 150ms" fill="#F2C811"
+        d="M820.481 243.968a93.276 93.276 0 0 1-7.664-4.061l19.644-36.853a49.858 49.858 0 0 0 7.652 4.097l-19.632 36.817Z" />
+      <path class="fan 14" style="animation-delay: 140ms" fill="#F2C811"
+        d="M834.013 245.277a87.907 87.907 0 0 0 8.416 2.098l9.337-36.866a48.61 48.61 0 0 1-8.416-2.121l-9.337 36.889Z" />
+      <path class="fan 13" style="animation-delay: 130ms" fill="#F2C811"
+        d="M855.634 210.97c1.37.121 2.74.182 4.123.182.776 0 1.71-.012 2.377-.049a56.723 56.723 0 0 0 2.013-.145l-.364 79.901c-1.297.061-2.595.061-3.892.061-.778 0-1.55-.022-2.32-.043a83.868 83.868 0 0 0-2.3-.042l.363-79.865Z" />
+      <path class="fan 12" style="animation-delay: 120ms" fill="#F2C811"
+        d="M875.764 208.497a50.206 50.206 0 0 1-8.416 2.061l12.672 52.334c2.85-.558 5.663-1.213 8.489-2.013l-12.745-52.382Z" />
+      <path class="fan 11" style="animation-delay: 110ms" fill="#F2C811"
+        d="M879.014 207.248a50.774 50.774 0 0 0 7.676-4.037l30.606 58.759a120.84 120.84 0 0 1-7.7 3.976l-30.582-58.698Z" />
+      <path class="fan 10" style="animation-delay: 100ms" fill="#F2C811"
+        d="M889.539 201.223a51.018 51.018 0 0 0 6.488-5.746l20.687 23.434a81.338 81.338 0 0 1-6.56 5.685l-20.615-23.373Z" />
+      <path class="fan 9" style="animation-delay: 90ms" fill="#F2C811"
+        d="m903.29 185.767 48.748 33.847a114.697 114.697 0 0 1-5.033 7.067l-48.674-33.786a50.878 50.878 0 0 0 4.959-7.128Z" />
+      <path class="fan 8" style="animation-delay: 80ms" fill="#F2C811"
+        d="m932.987 184.154-24.968-9.601a50.959 50.959 0 0 1-3.104 8.098l24.895 9.517a76.292 76.292 0 0 0 3.177-8.014Z" />
+      <path class="fan 7" style="animation-delay: 70ms" fill="#F2C811"
+        d="m972.773 170.395-62.886-7.783v.752a49.33 49.33 0 0 1-1.006 7.855l62.801 7.783a114.57 114.57 0 0 0 1.091-8.607Z" />
+      <path class="fan 6" style="animation-delay: 60ms" fill="#F2C811"
+        d="m908.832 150.526 46.286-5.528c.436 2.885.74 5.71.933 8.619l-46.176 5.516a50.658 50.658 0 0 0-1.043-8.607Z" />
+      <path class="fan 5" style="animation-delay: 50ms" fill="#F2C811"
+        d="m938.492 126.377-33.601 12.669a50.647 50.647 0 0 1 3.092 8.097l33.517-12.595a85.396 85.396 0 0 0-3.008-8.171Z" />
+      <path class="fan 4" style="animation-delay: 40ms" fill="#F2C811"
+        d="m898.27 128.887 22.761-15.663a80.914 80.914 0 0 1 4.887 7.165l-22.676 15.602a49.462 49.462 0 0 0-4.972-7.104Z" />
+      <path class="fan 3" style="animation-delay: 30ms" fill="#F2C811"
+        d="m904.661 103.465-15.207 17.118a49.811 49.811 0 0 1 6.512 5.721l15.158-17.068a71.304 71.304 0 0 0-6.463-5.771Z" />
+      <path class="fan 2" style="animation-delay: 20ms" fill="#F2C811"
+        d="m878.868 114.63 8.489-16.05a68.928 68.928 0 0 1 7.688 4.037l-8.488 16.002a50.2 50.2 0 0 0-7.689-3.989Z" />
+      <path class="fan 1" style="animation-delay: 10ms" fill="#F2C811"
+        d="m868.985 104.362-1.734 7.044c2.884.423 5.725 1.1 8.489 2.024l1.734-7.007a56.02 56.02 0 0 0-8.489-2.061Z" />
+    </g>
+
+    <!-- Cal -->
+    <g class="cal">
+      <path fill="#F2C811"
+        d="M910.867 92.855V75.818H893.83v17.036h-68.146V75.818h-17.036v17.036h-25.555v153.327H936.42V92.855h-25.553Zm8.518 136.291H800.13V134h119.254v95.146h.001Z"
+        class="Vector" />
+      <path fill="#F2C811"
+        d="M824.688 196.55h7.136v-28.192h10.453v-5.952h-28.042v5.952h10.453v28.192Zm28.943-1.075c2.123 1.039 4.602 1.559 7.436 1.559 2.823 0 5.296-.52 7.419-1.559 2.123-1.039 3.776-2.493 4.96-4.36 1.184-1.867 1.775-4.045 1.775-6.535v-22.174h-7.219v21.557c0 1.301-.286 2.457-.858 3.468a6.153 6.153 0 0 1-2.418 2.384c-1.039.578-2.259.867-3.659.867-1.39 0-2.606-.289-3.651-.867a6.142 6.142 0 0 1-2.426-2.384c-.572-1.011-.858-2.167-.858-3.468v-21.557h-7.219v22.174c0 2.49.589 4.668 1.767 6.535 1.177 1.867 2.828 3.321 4.951 4.36Zm50.598-4.877h-15.854v-8.153h14.604v-5.951h-14.604v-8.136h15.788v-5.952h-23.007v34.144h23.073v-5.952Z"
+        class="Vector" />
+    </g>
+  </g>
+</svg>
