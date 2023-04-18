@@ -1,5 +1,8 @@
 # Adverts
 
+### C# 10
+![](/exports/ad-csharp-10.svg)
+
 ### strategy
 ![](/exports/ad-strategy.svg)
 
