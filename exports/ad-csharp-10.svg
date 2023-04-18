@@ -20,8 +20,12 @@
         opacity: 0;
       }
 
-      100% {
+      95% {
         opacity: 0;
+      }
+
+      100% {
+        opacity: 1;
       }
     }
 
@@ -39,8 +43,12 @@
         opacity: 1;
       }
 
-      100% {
+      95% {
         opacity: 1;
+      }
+
+      100% {
+        opacity: 0;
       }
     }
 
